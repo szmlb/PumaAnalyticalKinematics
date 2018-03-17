@@ -6,6 +6,6 @@ The implementation is based on the paper, "An Analytical Solution of the Inverse
 The code is under development. The code does not deal with singular configuration explicitly. Moreover, configuration selection functionality is not completed, that is, all possible inverse kinematics solutions are returned simultaneously.
 
 # TODO
--Implement singular configuration checker
--Configuration selection functionality
--Configuration plotting functionality (for debugging use)
+- Add singular configuration checker
+- Add configuration selection functionality
+- Add configuration plotting functionality (for debugging use)
