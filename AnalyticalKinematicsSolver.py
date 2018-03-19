@@ -22,7 +22,7 @@ class AnalyticalKinematicsSolver:
         elif robot_type == "adept_viper_s650":
             self.param_set = ParamSet(0.075, -0.09,  0.0,  0.335, 0.270, 0.295, 0.08)
         elif robot_type == "custom":
-            self.param_set = custum_paramset
+            self.param_set = custom_paramset
         else:
             raise ValueError("Given robot type %s is not supported" % robot_type)
 
@@ -219,7 +219,7 @@ if __name__ == '__main__':
     # Instanciation
     kinematics_solver = AnalyticalKinematicsSolver("adept_viper_s650")
 
-    # End-effector FK/IK example code
+    # Set angles
     theta = [0.0*np.pi/180.0, 30.0*np.pi/180.0, 90.0*np.pi/180.0,  0.0,  10.0*np.pi/180.0, 0.0] # (lefty, above, nonflip)
 
     # Calcuate forward kinematics solution
